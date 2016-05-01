@@ -1,0 +1,10 @@
+package hw1;
+
+public class Encrypt {
+	int a;
+	int b;
+	public Encrypt(int a,int b){
+		this.a = a;
+		this.b = b;
+	}
+}

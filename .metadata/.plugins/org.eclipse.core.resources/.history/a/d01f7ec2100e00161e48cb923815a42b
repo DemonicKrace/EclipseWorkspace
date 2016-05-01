@@ -1,0 +1,42 @@
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStreamWriter;
+import java.net.URL;
+import java.net.URLConnection;
+
+
+public class HttpPost {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			sentHttpPostRequest("https://google.com", "arg1=value1&arg2=value2");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public static void sentHttpPostRequest(String url, String args) throws IOException {
+	    URLConnection connection = new URL(url).openConnection();
+	    // by default, connection with enable input, but won't enable output
+	    connection.setDoOutput(true);
+	    //connection.setDoInput(true);
+	    OutputStreamWriter out = new OutputStreamWriter(connection.getOutputStream());
+	    out.write(args);
+	    out.flush();
+	    out.close();
+	    
+	     //* If the page has respond, uncomment these statements the retrieve the respond data
+	    InputStream is = connection.getInputStream();
+	    FileOutputStream fos = new FileOutputStream("respond.txt");
+	    byte[] buffer = new byte[1024];
+	    for (int length; (length = is.read(buffer)) > 0;) {
+	        fos.write(buffer, 0, length);
+	    }
+	    fos.close();
+	    is.close();
+	    
+	}
+}

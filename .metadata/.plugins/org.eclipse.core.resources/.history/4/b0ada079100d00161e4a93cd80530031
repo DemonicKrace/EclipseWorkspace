@@ -1,0 +1,30 @@
+package hw10_2;
+
+public class hw10_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class CFlyMachine{
+	public int speed;
+	public int carryCapacity;
+	private int machineType;
+	public int counter;
+	
+	//(4)-a：設計一個無參數的建構子，將資料項目皆設為0。
+	CFlyMachine(){
+		this(0,0,0,0);
+	}
+	
+	CFlyMachine(int speed,int carryCapacity,int machineType,int counter){
+		this.speed = speed;
+		this.carryCapacity = carryCapacity;
+		this.machineType = machineType;
+		this.counter = counter;
+		
+	}
+}

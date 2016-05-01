@@ -1,0 +1,14 @@
+package hw1;
+
+public class Encrypt {
+	int a;
+	int b;
+	Encrypt(int a,int b){
+		this.a = a;
+		this.b = b;
+	}
+	
+	Encrypt(){
+		this(1,2);
+	}
+}
