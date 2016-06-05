@@ -1,0 +1,42 @@
+
+public class hw14 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try{
+			checkNumbers(args);
+		}catch(Exception e){
+			System.out.println(e.toString());
+		}
+
+	}
+	
+	static public void checkNumbers(String str[]) throws ArrayIndexOutOfBoundsException,ArithmeticException{
+		if(str.length < 2){
+			throw new ArrayIndexOutOfBoundsException("您的輸入參數不足二個");
+		}else if(str.length > 2){
+			throw new ArrayIndexOutOfBoundsException("您的輸入參數超過二個");
+		}else if(Integer.parseInt(str[1]) == 0){
+			throw new ArrayIndexOutOfBoundsException("分母不可為零");
+		}else{
+			System.out.println("答案：" + (Double.parseDouble(str[0]) / Double.parseDouble(str[1])));
+		}
+	}
+
+}
+
+class ArrayIndexOutOfBoundsException extends Exception
+{
+  public ArrayIndexOutOfBoundsException (String msg)
+  {
+    super(msg);
+  }
+}
+
+class ArithmeticException extends Exception
+{
+  public ArithmeticException  (String msg)
+  {
+    super(msg);
+  }
+}

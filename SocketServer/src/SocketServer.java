@@ -8,7 +8,7 @@ import java.util.concurrent.Executors;
 
 public class SocketServer
 {
-    public static final int LISTEN_PORT = 5987;
+    public static final int LISTEN_PORT = 3000;
     
     /**
      * @param args

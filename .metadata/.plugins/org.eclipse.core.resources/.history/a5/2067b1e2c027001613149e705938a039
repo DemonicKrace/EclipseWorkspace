@@ -1,0 +1,7 @@
+package pkgb;
+
+import pkga.Vehicle;
+
+public class RV extends Vehicle{
+
+}

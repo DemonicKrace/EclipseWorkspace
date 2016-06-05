@@ -1,0 +1,7 @@
+package pkgc;
+
+import pkga.Vehicle;
+
+public class Jeep extends Vehicle{
+
+}

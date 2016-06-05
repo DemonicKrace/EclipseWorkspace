@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="/Users/demonickrace/Desktop" key="org.eclipse.jdt.ui.lastextjar"/>
-	<item value="/Users/demonickrace/Desktop/matrix-toolkits-java-master/src/main" key="org.eclipse.jdt.ui.last.external.project"/>
+	<item value="true" key="ProjectSelectionDialog.show_all"/>
+	<item value="/Users/demonickrace/Desktop/EclipseWorkspace/jxse-test" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="/Users/demonickrace/Desktop/jxse-p2p-chat-master" key="org.eclipse.jdt.ui.last.external.project"/>
+	<item value="480,442" key="UserLibraryLoadSaveDialog.size"/>
 	<section name="ProblemSeveritiesConfigurationBlock">
-		<item value="false" key="expanded2"/>
+		<item value="true" key="expanded2"/>
 		<item value="false" key="expanded1"/>
-		<item value="false" key="expanded4"/>
+		<item value="true" key="expanded4"/>
 		<item value="false" key="expanded3"/>
-		<item value="false" key="expanded6"/>
-		<item value="false" key="expanded5"/>
+		<item value="true" key="expanded6"/>
+		<item value="true" key="expanded5"/>
 		<item value="false" key="expanded7"/>
 		<item value="true" key="expanded0"/>
 	</section>
@@ -57,10 +59,13 @@
 		<item value="81" key="DIALOG_X_ORIGIN"/>
 		<item value="107" key="DIALOG_Y_ORIGIN"/>
 	</section>
+	<section name="ClasspathContainerSelectionPage">
+		<item value="4" key="index"/>
+	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
 	<section name="BuildPathsPropertyPage">
-		<item value="3" key="pageIndex"/>
+		<item value="2" key="pageIndex"/>
 	</section>
 	<section name="NewPackageWizardPage">
 		<item value="false" key="create_package_info_java"/>

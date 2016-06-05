@@ -1,0 +1,32 @@
+package pkgd;
+
+import pkgb.RV;
+import pkgc.Jeep;
+
+public class hw15 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		RV rv = new RV();
+		rv.start();
+		rv.break_();
+		Jeep jeep = new Jeep();
+		jeep.start();
+		jeep.break_();
+		*/
+		
+		String str1=new String("abcabcabcabcabcbbcbbc");
+	    int counter=0,k=0;    	     	
+	    // 補足程式碼，可使用int indexOf(String str,int fromIndex)方法
+	    counter = computeSubStringCount(str1,"bc");
+	    System.out.println("bc出現在" + str1 + "共" + counter +"次");
+	    
+	}
+
+	private static int computeSubStringCount(String str1, String string) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

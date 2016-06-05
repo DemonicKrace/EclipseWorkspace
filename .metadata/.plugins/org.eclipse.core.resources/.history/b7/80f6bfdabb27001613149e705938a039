@@ -1,0 +1,41 @@
+
+public class hw14 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		for(int i=0;i<args.length;i++){
+			System.out.printf("args[%d] = %s\n",i,args[i]);
+//			System.out.println(args[i]);
+			try{
+				if(args.length!=2){
+					throws new Exception();
+				}
+			}catch(Exception e){
+				System.out.println(e.toString());
+			}
+		}
+	}
+	
+	static public void ArrayIndexOutOfBoundsException(String str[]) throws{
+		if(str.length!=2){
+			throws 
+		}
+	}
+
+}
+
+class ArrayIndexOutOfBoundsException extends Exception
+{
+  public ArrayIndexOutOfBoundsException (String mID)
+  {
+    super("ERROR: " + mID)
+  }
+}
+
+class ArithmeticException extends Exception
+{
+  public ArithmeticException  (String mID)
+  {
+    super("ERROR: " + mID)
+  }
+}

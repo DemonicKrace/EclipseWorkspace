@@ -1,0 +1,14 @@
+package pkgb;
+
+import pkga.Vehicle;
+
+public class RV extends Vehicle{
+	public void start(){
+		super.start("休旅車發動中..");
+	}
+
+	public void break_(){
+		super.break_("休旅車煞車中..");
+	}
+
+}
